@@ -49,10 +49,6 @@
     <body class="boxed">
         <div class="body">
             <header id="header">
-                                <?php 
-                    $currentPage = basename($_SERVER['PHP_SELF']);
-                    $menuClass = 'class="active"';
-                ?>
                 <div class="container">
                     <h1 class="logo">
                         <a href="index.html">
@@ -73,16 +69,16 @@
                         </ul>
                         <nav class="nav-main mega-menu">
                             <ul class="nav nav-pills nav-main" id="mainMenu">
-                                <li <?= ($currentPage=="index.php")?$menuClass:"" ?> >
+                                <li class="active" >
                                     <a href="index.php">Accueil</a>
                                 </li>
-                                <li <?= ($currentPage=="catalog.php")?$menuClass:"" ?> >
+                                <li>
                                     <a href="catalog.php">Catalogue</a>
                                 </li>
-                                <li <?= ($currentPage=="concepts.php")?$menuClass:"" ?> >
+                                <li>
                                     <a href="concepts.php">Travaux</a>
                                 </li>
-                                <li <?= ($currentPage=="contact-us.php")?$menuClass:"" ?> >
+                                <li>
                                     <a href="contact-us.php">Contact</a>
                                 </li>
                             </ul>
